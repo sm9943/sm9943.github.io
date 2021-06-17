@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!--AboutMe.html to handle the About me page in My Portfolio
+----@author: Shubhang Mehrotra
+-->
 <html lang="en">
     <head>
 
@@ -145,55 +148,101 @@
 <!-- Experience Section -->
 
 <section id="experience" class="parallax-section">
-     <div class="container">
-          <div class="row">
+    <div class="container">
+        <div class="row">
 
                <div class="col-md-6 col-sm-6">
                     <div class="background-image experience-img"></div>
                </div>
 
-               <div class="col-md-6 col-sm-6">
-                    <div class="color-white experience-thumb">
-                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
-                              <h1>My Experiences</h1>
-                              <p class="color-white">Previous companies and my tasks</p>
-                         </div>
+            <div class="bg-dark col-md-6 col-sm-6">
+            <div class="color-white experience-thumb">
 
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
-                              <div class="media-object media-left">
-                                   <i class="fa fa-laptop"></i>
-                              </div>
-                              <div class="media-body">
-                                   <h3 class="media-heading"> Undergraduate Research Assistant <small> May 2021 - Present</small></h3>
-                                   
-                              </div>
-                         </div>
+                <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                    <h1>My Experiences</h1>
+                    <p class="color-white">Previous companies and my tasks</p>
+                </div>
 
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
-                              <div class="media-object media-left">
-                                   <i class="fa fa-smile-o"></i>
-                              </div>
-                              <div class="media-body">
-                                   <h3 class="media-heading"> Resident Advisor <small> January 2021 - May 2021</small></h3>
-                                   
-                              </div>
-                         </div>
+                <div class="accordion" id= "experienceAccordion">
 
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
-                            <div class="media-object media-left">
-                                 <i class="fa fa-laptop"></i>
-                            </div>
-                            <div class="media-body">
-                                 <h3 class="media-heading"> Backend Intern <small> May 2020 - August 2020</small></h3>
-                                 
-                            </div>
-                       </div>
+                            <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                                <div class="media-object media-left">
+                                    <i class="fa fa-laptop"></i>
+                                </div>
 
-                    </div>
-               </div>
+                                <div class="media-body card wow fadeInUp color-white media">
+                                    <h3 class="media-heading"> 
+                                        <button class="text-info collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Undergraduate Research Assistant
+                                        </button> 
+                                        <small> May 2021 - Present</small>
+                                    </h3>
+                                    
+                                        <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#experienceAccordion">
+                                          <div class="card-body">
+                                              <p>Detailed analysis of more than 20 research papers targeted at the immune response of the SARS CoV-2 Virus to develop an In-host model.</p>
+                                              <p>Perform numerical simulations of mathematical models using Python and MATLAB.</p>
+                                              <p>Composing scientific documentation using LaTeX.</p>
+                                          </div>
+                                        </div>
+                                </div>
+                            </div>    
 
-          </div>
-     </div>
+                            
+                                
+
+                            <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                                <div class="media-object media-left">
+                                    <i class="fa fa-smile-o"></i>
+                                </div>
+                                <div class="media-body card wow fadeInUp color-white media">
+                                    <h3 class="media-heading"> 
+                                        <button class="text-info collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Resident Advisor
+                                        </button> 
+                                        <small>January 2021 - May 2021</small>
+                                    </h3>
+                                    
+                                        <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-parent="#experienceAccordion">
+                                          <div class="card-body">
+                                              <p>A Student Leadership position with the RIT Resident Life, that employed my conflict resolving and people skills. </p>
+                                              <p>Cultivated a positive environment among 40 residents.</p>
+                                              <p>Directed Floor Events of up to 100 residents.</p>
+                                              <p>Oversaw RIT Policies and Guidelines being followed among multiple residence halls.</p>
+                                          </div>
+                                        </div>
+                                </div>
+                            </div>  
+
+                            <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                                <div class="media-object media-left">
+                                    <i class="fa fa-laptop"></i>
+                                </div>
+                                <div class="media-body card wow fadeInUp color-white">
+                                    <h3 class="media-heading"> 
+                                        <button class="text-info collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Backend Intern
+                                        </button> 
+                                        <small>May 2020 - August 2020</small>
+                                    </h3>
+                                    
+                                        <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#experienceAccordion">
+                                          <div class="card-body">
+                                              <p>Back-end development for an Android Application to handle large-scale logistics.</p>
+                                              <p>Built microservices using Spring Boot framework to manage Login, Referrals, and Data Access Objects.</p>
+                                              <p>Handled extensive data using MySQL and Spring JDBC.</p>
+                                              <p>Revitalized the legacy PHP Code into Java which enabled the team to move to a newer framework.</p>
+                                              <p>Worked in an Agile Environment with POs, architects, and 3 other developers.</p>
+                                              <p>Operated AWS Cloud for file management.</p>
+                                          </div>
+                                        </div>
+                                </div>
+                            </div> 
+                </div>       
+            </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
